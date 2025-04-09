@@ -1,52 +1,42 @@
-# 🎯 Bucket Bingo Application
+# 🎯 버킷 빙고 (Bucket Bingo)
 
-버킷리스트를 빙고 형식으로 관리하고 달성해나가는 재미있는 웹 애플리케이션입니다.
+> 사용자의 버킷리스트로 즐기는 자기계발 빙고 게임
 
-## 🚀 주요 기능
+---
 
-- 버킷리스트 빙고판 생성 및 관리
-- 달성한 버킷리스트 체크 및 진행상황 시각화
-- 다른 사용자들과 버킷리스트 공유 및 소통
-- 반응형 디자인으로 모바일/데스크톱 모두 지원
+## 📌 1. 서비스 개요
 
-## 🛠 기술 스택
+- **이름**: 버킷 빙고 (Bucket Bingo)
+- **형태**: 웹 기반 사이드 프로젝트 (Next.js 기반)
+- **목적**: 버킷리스트를 빙고판에 배치해 미션을 수행하며 동기부여와 성취감을 느낄 수 있는 미니멀 게임
 
-- **Frontend**: Next.js 14, React, TypeScript
-- **Styling**: Tailwind CSS
-- **Package Manager**: npm
-- **Version Control**: Git
+---
 
-## 🏃‍♂️ 시작하기
+## ✨ 2. 주요 기능
 
-### 필수 조건
+### 📝 2-1 버킷리스트 작성 & 관리
 
-- Node.js 18.0.0 이상
-- npm 9.0.0 이상
+- 빙고판 크기에 따라 자동 항목 수 조정
+- 직접 입력 또는 추천 항목 로드
+- 수정 및 삭제 기능
 
-### 설치 방법
+### 🧩 2-2 빙고판 생성
 
-1. 저장소를 클론합니다:
+- 크기 선택: `5x5 ~ 10x10`
+- 랜덤 or 수동 배치
+- 상태 변경: `🕐 TODO → 🔄 진행중 → ✅ 완료`
+- 빙고선 완성 시 시각 피드백 제공
 
-```bash
-git clone https://github.com/yeleepark/bucket-bingo-application.git
-```
+---
 
-2. 프로젝트 디렉토리로 이동합니다:
+## 🛠 3. 기술 스택
 
-```bash
-cd bucket-bingo-application
-```
+- **Frontend**: Next.js + React + TypeScript
+- **UI 스타일링**: Tailwind CSS
+- **상태관리**: Zustand
+- **배포**: Vercel
+- **데이터 저장**:
+  - JSON 파일 (Next.js API Routes)
+  - Firebase (차후 고려)
 
-3. 의존성을 설치합니다:
-
-```bash
-npm install
-```
-
-4. 개발 서버를 실행합니다:
-
-```bash
-npm run dev
-```
-
-5. 브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 애플리케이션을 확인합니다.
+---
