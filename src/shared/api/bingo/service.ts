@@ -1,3 +1,4 @@
+import { BINGO_ENDPOINTS } from './endpoints';
 import {
   BingoCreateDTO,
   BingoDTO,
@@ -6,7 +7,6 @@ import {
   FriendBingoDTO,
   GoalUpdateDTO
 } from './types';
-import { BINGO_ENDPOINTS } from './endpoints';
 
 /**
  * Custom API error class
@@ -33,7 +33,8 @@ async function processResponse<T>(response: Response): Promise<T> {
       if (errorData.message) {
         errorMessage = errorData.message;
       }
-    } catch (e) {
+    } catch (error) {
+      console.error('Error parsing JSON:', error);
       // Ignore JSON parsing error
     }
 
